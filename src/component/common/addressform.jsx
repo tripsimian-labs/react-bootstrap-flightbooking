@@ -1,13 +1,13 @@
 import React from "react";
-import CountryList from "./countrylist";
+import {CountryList} from "./countrylist";
 
 export class AddressForm extends React.Component {
   render() {
     return (
       <div className="row">
         <form className="form-horizontal">
-                <fieldset>         
-                    <h2>Address</h2>        
+                <fieldset>
+                    <h2>Address</h2>
                     <div className="control-group">
                         <label className="control-label">Full Name</label>
                         <div className="controls">
@@ -34,7 +34,7 @@ export class AddressForm extends React.Component {
                             <p className="help-block">Apartment, suite , unit, building, floor, etc.</p>
                         </div>
                     </div>
-        
+
                     <div className="control-group">
                         <label className="control-label">City / Town</label>
                         <div className="controls">
@@ -42,7 +42,7 @@ export class AddressForm extends React.Component {
                             <p className="help-block"></p>
                         </div>
                     </div>
-              
+
                     <div className="control-group">
                         <label className="control-label">State / Province / Region</label>
                         <div className="controls">
@@ -65,7 +65,7 @@ export class AddressForm extends React.Component {
                         <div className="controls">
                             <input list="countrylist" id="country" name="country" className="input-xlarge"/>
                             <CountryList/>
-                        </div>                        
+                        </div>
                     </div>
                 </fieldset>
             </form>

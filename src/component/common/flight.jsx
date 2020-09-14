@@ -3,6 +3,7 @@ import React from "react";
 export class Flight extends React.Component {
   render() {
     return (
+      <>
       <div className="card-body">
         <div className="row align-items-center">
           <div className="col-sm-9">
@@ -87,7 +88,8 @@ export class Flight extends React.Component {
             </tr>
           </table>
         </div>
-      </div>    
+      </div>
+      </>          
     );
   }
 }
